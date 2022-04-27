@@ -15,12 +15,12 @@ namespace Homework3
 
         public void Call()
         {
-
+            Console.WriteLine("Calling");
         }
 
         public void SendSms()
         {
-
+            Console.WriteLine("SMS sent");
         }
 
     }
