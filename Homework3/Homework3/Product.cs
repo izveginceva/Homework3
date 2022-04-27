@@ -8,10 +8,9 @@ namespace Homework3
 {
     public class Product
     {
-        
-        public double Height { get; private set; }
-        public double Width { get; private set; }
-        public double Weight { get; private set; }
+        public Product()
+        {
+        }
 
         public Product(double height, double width, double weight)
         {
@@ -19,12 +18,11 @@ namespace Homework3
             Width = width;
             Weight = weight;
         }
+        public double Height { get;  }
+        public double Width { get;  }
+        public double Weight { get; }
 
-        public Product CreateNewProduct(double productHeight)
-        {
-            Product myNewProduct = newProduct(productHeight);
-            return myNewProduct;
+        
 
-        }
-    }
+          }
 }

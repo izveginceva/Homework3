@@ -51,13 +51,13 @@ Console.WriteLine($"Apstāšanās pie ātruma {opel.Speed}");
 Console.WriteLine($"Automašīna {opel.Brand} ar numurzīmi {opel.NumberPlate} uztaurē ar skaņas signālu BEEP");
 
 //3.uzdevums - šo neizdevās izcīnīt..
-Product table = new Product();
+Product product = new Product();
+
 
 double height = 8;
 double width = 6;
 double weight = 7;
 
-table.Height = height;
 
 
 
@@ -84,7 +84,7 @@ ilga.Surname = surname;
 ilga.Hobby = hobby;
 
 ilga.GetAge();
-var age = DateTime.Now.Year - ilga.BirthDate.Year;
+int age = DateTime.Now.Year - ilga.BirthDate.Year;
 if (ilga.BirthDate > DateTime.Today.AddYears(-age)) age--;
 //Console.WriteLine("Age = " + age);
 //Console.ReadLine();
